@@ -1,4 +1,4 @@
-
+import { ContactUs } from "./component/contactUs/contactUs.js";
 import { Reviews } from "./component/reviews/reviews.js";
 import { Header } from './component/header/header.js';
 import { Hero } from './component/hero/hero.js';
@@ -9,4 +9,4 @@ import "./style.css";
 
 const app = document.getElementById('app');
 
-app.append(Header(), Hero(),IntroCards(),Topic() ,ProductCard(), Reviews());
+app.append(Header(), Hero(),ProductCard(),Topic() , IntroCards(),ContactUs(),Reviews());
