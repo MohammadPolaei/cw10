@@ -1,8 +1,9 @@
-import { Header } from "./component/header/header.js";
-import { Hero } from "./component/hero/hero.js";
-import { IntroCards } from "./component/intro-cards/intro-cards.js";
-import "./style.css";
+import { Header } from './component/header/header.js';
+import { Hero } from './component/hero/hero.js';
+import { IntroCards } from './component/intro-cards/intro-cards.js';
+import { ProductCard } from './component/productCard/productCard.js';
+import './style.css';
 
-const app = document.getElementById("app");
+const app = document.getElementById('app');
 
-app.append(Header(), Hero(), IntroCards());
+app.append(Header(), Hero(), IntroCards(), ProductCard());
