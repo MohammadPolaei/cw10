@@ -1,8 +1,10 @@
 import btnDiv from "../../utils/button";
 
-const header = document.getElementById("header");
-header.innerHTML = `
-			<div class="flex flex-row-reverse items-center gap-5">
+export function Header() {
+	const header = document.createElement("div");
+	header.innerHTML = `
+	  <div class="m-5 flex justify-between items-center">
+			<div class="flex flex-row items-center gap-5">
 				<span class="font-bold text-xl">Learnora</span>
 				<span
 					class="bg-[#736aff] px-5 py-3.5 rounded-xl text-white font-bold text-[18px]"
@@ -20,4 +22,7 @@ header.innerHTML = `
         ${btnDiv}
 				</div>
 			</nav>
+		</div>
 `;
+	return header;
+}
